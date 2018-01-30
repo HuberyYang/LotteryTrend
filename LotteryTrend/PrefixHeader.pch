@@ -1,0 +1,30 @@
+//
+//  PrefixHeader.pch
+//  LotteryTrend
+//
+//  Created by mac on 2018/1/30.
+//  Copyright © 2018年 Hubery. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+
+#define kScreenWidth     [UIScreen mainScreen].bounds.size.width
+#define kScreenHeight    [UIScreen mainScreen].bounds.size.height
+
+#define kIssueListWidth  60.0f  // 期号label宽度
+#define kItemSize        CGSizeMake(25, 25)
+#define kNavBarHeight    (kScreenHeight == 812.0 ? 88 : 64)
+
+#define kRGB(r, g, b)    [UIColor colorWithRed:(r)/255.0  green:(g)/255.0  blue:(b)/255.0  alpha:1.0]
+#define kBG_COLOR        [UIColor colorWithRed:242/255.0f green:242/255.0f blue:242/255.0f alpha:1.0]
+#define kBLUE_COLOR      [UIColor colorWithRed:40/255.0   green:101/255.0  blue:198/255.0  alpha:1.0]
+#define kDARK_GRAY_COLOR [UIColor colorWithRed:220/255.0  green:220/255.0  blue:220/255.0  alpha:1.0]
+
+#import <Masonry.h>
+
+#endif /* PrefixHeader_pch */
